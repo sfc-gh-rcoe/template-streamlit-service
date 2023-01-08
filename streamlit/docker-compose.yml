@@ -1,0 +1,9 @@
+web:
+  image: alpine:
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "8501:8501"
+  environment:
+   - NGINX_HOST=your_domain_name.here
+   - NGINX_PORT=80

@@ -1,0 +1,10 @@
+web:
+  image: nginx
+  volumes:
+   - ./templates:/etc/nginx/templates
+  ports:
+   - "80:80"
+   - "443:443"
+  environment:
+   - NGINX_HOST=your_domain_name.here
+   - NGINX_PORT=80
